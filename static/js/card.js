@@ -1,0 +1,161 @@
+export const red_cards = [
+  {
+    index: 0,
+    name: "Ace",
+    value: 11,
+    image: "/static/img/card-r-ace.png",
+  },
+  {
+    index: 1,
+    name: "Two",
+    value: 2,
+    image: "/static/img/card-r-2.png",
+  },
+  {
+    index: 2,
+    name: "Three",
+    value: 3,
+    image: "/static/img/card-r-3.png",
+  },
+  {
+    index: 3,
+    name: "Four",
+    value: 4,
+    image: "/static/img/card-r-4.png",
+  },
+  {
+    index: 4,
+    name: "Five",
+    value: 5,
+    image: "/static/img/card-r-5.png",
+  },
+  {
+    index: 5,
+    name: "Six",
+    value: 6,
+    image: "/static/img/card-r-6.png",
+  },
+  {
+    index: 6,
+    name: "Seven",
+    value: 7,
+    image: "/static/img/card-r-7.png",
+  },
+  {
+    index: 7,
+    name: "Eight",
+    value: 8,
+    image: "/static/img/card-r-8.png",
+  },
+  {
+    index: 8,
+    name: "Nine",
+    value: 9,
+    image: "/static/img/card-r-9.png",
+  },
+  {
+    index: 9,
+    name: "Ten",
+    value: 10,
+    image: "/static/img/card-r-10.png",
+  },
+  {
+    index: 10,
+    name: "Jack",
+    value: 10,
+    image: "/static/img/card-r-j.png",
+  },
+  {
+    index: 11,
+    name: "Queen",
+    value: 10,
+    image: "/static/img/card-r-queen.png",
+  },
+  {
+    index: 12,
+    name: "King",
+    value: 10,
+    image: "/static/img/card-r-king.png",
+  },
+];
+
+export const black_cards = [
+  {
+    index: 0,
+    name: "Ace",
+    value: 11,
+    image: "/static/img/card-b-ace.png",
+  },
+  {
+    index: 1,
+    name: "Two",
+    value: 2,
+    image: "/static/img/card-b-2.png",
+  },
+  {
+    index: 2,
+    name: "Three",
+    value: 3,
+    image: "/static/img/card-b-3.png",
+  },
+  {
+    index: 3,
+    name: "Four",
+    value: 4,
+    image: "/static/img/card-b-4.png",
+  },
+  {
+    index: 4,
+    name: "Five",
+    value: 5,
+    image: "/static/img/card-b-5.png",
+  },
+  {
+    index: 5,
+    name: "Six",
+    value: 6,
+    image: "/static/img/card-b-6.png",
+  },
+  {
+    index: 6,
+    name: "Seven",
+    value: 7,
+    image: "/static/img/card-b-7.png",
+  },
+  {
+    index: 7,
+    name: "Eight",
+    value: 8,
+    image: "/static/img/card-b-8.png",
+  },
+  {
+    index: 8,
+    name: "Nine",
+    value: 9,
+    image: "/static/img/card-b-9.png",
+  },
+  {
+    index: 9,
+    name: "Ten",
+    value: 10,
+    image: "/static/img/card-b-10.png",
+  },
+  {
+    index: 10,
+    name: "Jack",
+    value: 10,
+    image: "/static/img/card-b-j.png",
+  },
+  {
+    index: 11,
+    name: "Queen",
+    value: 10,
+    image: "/static/img/card-b-queen.png",
+  },
+  {
+    index: 12,
+    name: "King",
+    value: 10,
+    image: "/static/img/card-b-king.png",
+  },
+];

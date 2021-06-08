@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Blackjack</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="/static/img/logo.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/styles.css" />
+    <script src="/static/js/game.js" defer type="module"></script>
+  </head>
+  <body>
+    <header>
+      <div class="hidden" id="balance-head">
+        BALANCE: <i class="fas fa-dollar-sign"></i>
+        <input id="money" value="1000" disabled='disabled'/>
+      </div>
+      <div class="new-game">
+        <button id="play-button">PLAY</button>
+        <img src="/static/img/logo.png" id='bj-logo' class='intro' alt="logo">
+      </div>
+    </header>
+
+<!-- WINNER / LOSER cases -->
+    <div class="winner hidden">
+      <button class="close">&times;</button>
+      <img src="/static/img/win.png" alt="win">
+    </div>
+    <div class="loser hidden">
+      <button class="close">&times;</button>
+      <img src="/static/img/lose.png" alt="lose">
+    </div>
+    <div class="overlay hidden"></div>
+
+    <div class="play-field">
+        <div class="dealer-field">
+            <div class="card-slot d-card-slot d-start bet"></div>
+            <div class="card-slot d-card-slot under bet"></div>
+            <div class="card-slot d-card-slot" id="d-3"></div>
+            <div class="card-slot d-card-slot" id="d-4"></div>
+            <div class="card-slot d-card-slot" id="d-5"></div>
+    </div>
+    <div class="middle-container">
+        <button id="btn-hit" class="hidden">HIT</button>
+        <h3 class="hidden" id='current-point-head'>YOU HAVE <span id="current-point">16</span></h3>
+        <button id="btn-stand" class="hidden">STAND</button>
+    </div>
+    <div class="play-field">
+        <div class="player-field">
+            <div class="card-slot p-card-slot p-start bet"></div>
+            <div class="card-slot p-card-slot p-start bet"></div>
+            <div class="card-slot p-card-slot" id="p-3"></div>
+            <div class="card-slot p-card-slot" id="p-4"></div>
+            <div class="card-slot p-card-slot" id="p-5"></div>
+    </div>
+
+    <div class="chips hidden">
+      <button id="deal">DEAL</button>
+      <img id="chip-500" src="/static/img/chip-500.png" alt="500">
+      <img id="chip-100" src="/static/img/chip-100.png" alt="100">
+      <img id="chip-50" src="/static/img/chip-50.png" alt="50">
+      <img id="chip-25" src="/static/img/chip-25.png" alt="25">
+      <h2>PLACE YOUR BETS: <i class="fas fa-dollar-sign"> </i><span class="bet-total">0</span> </i> </h2>
+    </div>
+  </body>
+</html>

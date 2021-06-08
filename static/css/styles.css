@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  background-image: linear-gradient(to top left, #28a82c, #063306 100%);
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  font-size: 25px;
+  text-align: center;
+  box-shadow: 3px 8px 8px #111;
+  text-shadow: 2px 2px 4px #222;
+}
+
+header input {
+  font-family: "Staatliches", cursive;
+  text-align: right;
+  font-size: 25px;
+  border: 4px solid rgb(187, 216, 22);
+  border-radius: 10px;
+  height: 35px;
+  width: 100px;
+  background-color: rgb(54, 109, 9);
+  font-weight: bold;
+  margin-left: 10px;
+  padding-right: 5px;
+  color: white;
+  box-shadow: 2px 0px 5px 2px rgb(97, 91, 91);
+  text-shadow: 2px 2px 4px #222;
+}
+
+.new-game button {
+  position: absolute;
+  font-family: "Lato", sans-serif;
+  border: 3px solid #aec731;
+  border-radius: 100%;
+  color: rgb(45, 75, 49);
+  padding: 20px;
+  font-weight: bold;
+  height: 90px;
+  width: 90px;
+  margin-left: 250px;
+  font-size: 18px;
+  cursor: pointer;
+  background-image: linear-gradient(0.25turn, #169397, #81bebe, #466492);
+  transition: all 0.5s ease;
+  text-shadow: 0px 0px 14px rgb(255, 255, 255);
+  box-shadow: 2px 0px 5px 2px rgb(97, 91, 91);
+  outline: none;
+}
+
+.new-game button:hover {
+  background-image: linear-gradient(
+    to top left,
+    rgb(187, 216, 22),
+    #515c17 100%
+  );
+  color: white;
+}
+
+.play-field {
+  padding-top: 10px;
+  max-width: 750px;
+  margin: auto;
+}
+
+.middle-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 90px 0px 90px;
+}
+
+.middle-container h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  text-shadow: 0px 2px 8px rgb(0, 0, 0);
+  color: rgb(211, 211, 211);
+}
+
+.intro {
+  position: absolute;
+  top: 150px;
+  left: 35%;
+  transition: all 1s ease;
+}
+
+.logo {
+  position: absolute;
+  z-index: 30;
+  top: 10px;
+  left: 80px;
+  height: 250px;
+  transition: all 1s ease;
+}
+
+.middle-container button {
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  color: #222;
+  border-radius: 30px;
+  border: none;
+  width: 100px;
+  height: 60px;
+  cursor: pointer;
+  background-image: linear-gradient(to top left, #224288, #81aed8 100%);
+  transition: all 0.4s ease;
+  outline: none;
+  text-shadow: 1px 1px 4px rgb(81, 80, 146);
+}
+
+.middle-container button:hover {
+  background-image: linear-gradient(
+    to top left,
+    rgb(187, 216, 22),
+    #515c17 100%
+  );
+  color: white;
+}
+
+#current-point {
+  font-size: 30px;
+  color: #c0af18;
+  margin-left: 10px;
+}
+
+.card-slot {
+  height: 200px;
+  width: 125px;
+  margin: 6px;
+  display: inline-block;
+}
+
+.card-slot img {
+  height: 200px;
+  border-radius: 10px;
+}
+
+.chips {
+  color: #dadada;
+  text-shadow: 0px 2px 8px rgb(0, 0, 0);
+}
+
+.chips button {
+  float: right;
+  font-family: "Lato", sans-serif;
+  font-size: 22px;
+  color: #222;
+  border-radius: 100%;
+  border: none;
+  width: 85px;
+  height: 85px;
+  cursor: pointer;
+  background-image: linear-gradient(to top left, #224288, #81aed8 100%);
+  transition: all 0.4s ease;
+  outline: none;
+  margin-left: 15px;
+  text-shadow: 1px 1px 4px rgb(81, 80, 146);
+}
+
+.chips button:hover {
+  background-image: linear-gradient(
+    to top left,
+    rgb(187, 216, 22),
+    #515c17 100%
+  );
+  color: white;
+  box-shadow: 0px 0px 5px 8px rgb(50, 141, 58);
+}
+
+.chips img {
+  height: 85px;
+  float: right;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.chips img:hover {
+  background-color: rgb(187, 216, 22);
+  border-radius: 40px;
+}
+
+.winner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.winner img {
+  height: 500px;
+  z-index: 10;
+}
+
+.loser {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.loser img {
+  height: 500px;
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.close {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #888;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.bet-total {
+  margin-left: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.initial {
+  display: initial;
+}
